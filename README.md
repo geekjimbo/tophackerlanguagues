@@ -1,4 +1,12 @@
-# Impromptu Google Search CLI 
+# Search Preferred Hacker Programming Languages - Service
+
+Idea is to answer the question `which programming languages are preferred by hackers?`
+The plan is folded as follows:
+  
+  * Get a list of programming languages (curaded list)
+  * Search google for `preferred hacker programming languages` 
+  * Wrap everything as a RESTFul service
+  * Invoke the service from a separate terminal window
 
 ## Install
 
