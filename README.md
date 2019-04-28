@@ -2,24 +2,21 @@
 
 ## Install
 
+* if you're a `windows user` you need to get `git bash` deployed in your environment. Make sure you `only` install `git bash`, do not include the desktop app.
+
 * deploy `goggler` by typing the following the instructions of this link `http://bit.ly/2GFlmhD` and typing all indicated commands in your terminal.
 
 * deploy `ssh2http` from this link `http://bit.ly/2LbcnKo`
 
 ## Run the service 
 
-* Start the service by typing the following commands in your terminal:
+* Start the service by runnin the following shell script from your terminal windows:
 
 ```
-search="modern programming languages" ;\
-shell2http /search "googler \
-                       --count 10000 $search |\
-                       grep -oh '\w*'  |\
-                       grep -Ff list.txt | \
-                       sort | uniq -c | sort -r | head -20"
+./service.sh 
 ```
 
-* Invoke the service by typing the following command in your terminal:
+* Invoke the service by typing the following command in a separate terminal:
 
 ```
 curl http://localhost:8080/search
